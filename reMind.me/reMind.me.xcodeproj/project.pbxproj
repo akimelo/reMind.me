@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76F6D93197DC254DE02875EF /* Pods_reMind_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649E0423056AE0C3C0C2250A /* Pods_reMind_me.framework */; };
 		D2C6F4942B3FE77D0077BE46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4932B3FE77D0077BE46 /* AppDelegate.swift */; };
 		D2C6F4962B3FE77D0077BE46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4952B3FE77D0077BE46 /* SceneDelegate.swift */; };
 		D2C6F4982B3FE77D0077BE46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4972B3FE77D0077BE46 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		649E0423056AE0C3C0C2250A /* Pods_reMind_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reMind_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CEF3476E1070774D35C8BF /* Pods-reMind.me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reMind.me.debug.xcconfig"; path = "Target Support Files/Pods-reMind.me/Pods-reMind.me.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF70F8A0C2326AA35B00573 /* Pods-reMind.me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reMind.me.release.xcconfig"; path = "Target Support Files/Pods-reMind.me/Pods-reMind.me.release.xcconfig"; sourceTree = "<group>"; };
 		D2C6F4902B3FE77D0077BE46 /* reMind.me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reMind.me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C6F4932B3FE77D0077BE46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C6F4952B3FE77D0077BE46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F6D93197DC254DE02875EF /* Pods_reMind_me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93F7647B40BA04AFDBCEE278 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84CEF3476E1070774D35C8BF /* Pods-reMind.me.debug.xcconfig */,
+				BEF70F8A0C2326AA35B00573 /* Pods-reMind.me.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A300705312123A22C10B8818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				649E0423056AE0C3C0C2250A /* Pods_reMind_me.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2C6F4872B3FE77D0077BE46 = {
 			isa = PBXGroup;
 			children = (
 				D2C6F4922B3FE77D0077BE46 /* reMind.me */,
 				D2C6F4912B3FE77D0077BE46 /* Products */,
+				93F7647B40BA04AFDBCEE278 /* Pods */,
+				A300705312123A22C10B8818 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C6F4A42B3FE77D0077BE46 /* Build configuration list for PBXNativeTarget "reMind.me" */;
 			buildPhases = (
+				B49DF28307F9C9B93DF5E6D3 /* [CP] Check Pods Manifest.lock */,
 				D2C6F48C2B3FE77D0077BE46 /* Sources */,
 				D2C6F48D2B3FE77D0077BE46 /* Frameworks */,
 				D2C6F48E2B3FE77D0077BE46 /* Resources */,
+				995D556CAEA14C22C7A5FD06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		995D556CAEA14C22C7A5FD06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reMind.me/Pods-reMind.me-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reMind.me/Pods-reMind.me-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reMind.me/Pods-reMind.me-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49DF28307F9C9B93DF5E6D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reMind.me-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C6F48C2B3FE77D0077BE46 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		D2C6F4A52B3FE77D0077BE46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CEF3476E1070774D35C8BF /* Pods-reMind.me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		D2C6F4A62B3FE77D0077BE46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEF70F8A0C2326AA35B00573 /* Pods-reMind.me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

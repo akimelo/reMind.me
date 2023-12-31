@@ -24,13 +24,8 @@ class AddView: UIViewController {
     }
     
     @IBAction func onAdd(_ sender: Any) {
-        let item = TaskItem()
-        item.title = itemField.text!
-        item.date = datePicker.date
-        item.id = String(Int.random(in: 0...9999))
-        try! realm.write{
-            realm.add(item)
-        }
+        let helper = InfoHelper()
+        helper.save(title:itemField.text!, date:datePicker.date)
         dismiss(animated: true, completion: nil)
     }
     

@@ -36,9 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") //cellはStep2で指定した文字列
         let item = itemList[indexPath.row]
         cell?.textLabel?.text = item.title
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd HH:mm"
-        cell?.detailTextLabel?.text = formatter.string(from: item.date)
+        let helper = InfoHelper()
+        cell?.detailTextLabel?.text = helper.dateToString(date: item.date)
         return cell!
     }
     

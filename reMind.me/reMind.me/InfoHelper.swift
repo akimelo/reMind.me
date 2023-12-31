@@ -39,4 +39,11 @@ class InfoHelper {
         let request = UNNotificationRequest(identifier: item.id, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
+    
+    func deleteItem(item:TaskItem, token:NotificationToken){
+        try! realm.write(withoutNotifying:[token]){
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [item.id])
+            realm.delete(item)
+        }
+    }
 }

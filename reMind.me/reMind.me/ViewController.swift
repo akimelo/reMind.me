@@ -28,6 +28,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          setupNavigationBarTitle()
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            InfoHelper().deleteItem( item:itemList[indexPath.row] ,token: token)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+                                    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemList.count //リストの数を設定する
     }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76F6D93197DC254DE02875EF /* Pods_reMind_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649E0423056AE0C3C0C2250A /* Pods_reMind_me.framework */; };
+		D29F92A62B4170BD007916F5 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F92A52B4170BD007916F5 /* TaskItem.swift */; };
+		D29F92A82B4171A2007916F5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F92A72B4171A2007916F5 /* AddView.swift */; };
+		D29F92AA2B417C48007916F5 /* InfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F92A92B417C48007916F5 /* InfoHelper.swift */; };
 		D2C6F4942B3FE77D0077BE46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4932B3FE77D0077BE46 /* AppDelegate.swift */; };
 		D2C6F4962B3FE77D0077BE46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4952B3FE77D0077BE46 /* SceneDelegate.swift */; };
 		D2C6F4982B3FE77D0077BE46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C6F4972B3FE77D0077BE46 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		649E0423056AE0C3C0C2250A /* Pods_reMind_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reMind_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CEF3476E1070774D35C8BF /* Pods-reMind.me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reMind.me.debug.xcconfig"; path = "Target Support Files/Pods-reMind.me/Pods-reMind.me.debug.xcconfig"; sourceTree = "<group>"; };
 		BEF70F8A0C2326AA35B00573 /* Pods-reMind.me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reMind.me.release.xcconfig"; path = "Target Support Files/Pods-reMind.me/Pods-reMind.me.release.xcconfig"; sourceTree = "<group>"; };
+		D29F92A52B4170BD007916F5 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		D29F92A72B4171A2007916F5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		D29F92A92B417C48007916F5 /* InfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelper.swift; sourceTree = "<group>"; };
 		D2C6F4902B3FE77D0077BE46 /* reMind.me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reMind.me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C6F4932B3FE77D0077BE46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C6F4952B3FE77D0077BE46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				D2C6F49C2B3FE77D0077BE46 /* Assets.xcassets */,
 				D2C6F49E2B3FE77D0077BE46 /* LaunchScreen.storyboard */,
 				D2C6F4A12B3FE77D0077BE46 /* Info.plist */,
+				D29F92A52B4170BD007916F5 /* TaskItem.swift */,
+				D29F92A72B4171A2007916F5 /* AddView.swift */,
+				D29F92A92B417C48007916F5 /* InfoHelper.swift */,
 			);
 			path = reMind.me;
 			sourceTree = "<group>";
@@ -208,7 +217,10 @@
 			files = (
 				D2C6F4982B3FE77D0077BE46 /* ViewController.swift in Sources */,
 				D2C6F4942B3FE77D0077BE46 /* AppDelegate.swift in Sources */,
+				D29F92A82B4171A2007916F5 /* AddView.swift in Sources */,
+				D29F92AA2B417C48007916F5 /* InfoHelper.swift in Sources */,
 				D2C6F4962B3FE77D0077BE46 /* SceneDelegate.swift in Sources */,
+				D29F92A62B4170BD007916F5 /* TaskItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
